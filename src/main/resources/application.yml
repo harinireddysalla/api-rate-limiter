@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: cerbo-api-rate-limiter
+
+rate-limit:
+
+  clients:
+
+    standard:
+      read:
+        capacity: 100
+        refill-per-minute: 100
+      write:
+        capacity: 20
+        refill-per-minute: 20
+
+    premium:
+      read:
+        capacity: 500
+        refill-per-minute: 500
+      write:
+        capacity: 100
+        refill-per-minute: 100
+
+  cache:
+    max-clients: 10000
