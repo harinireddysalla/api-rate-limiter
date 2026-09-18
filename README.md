@@ -100,7 +100,7 @@ The rate-limit configuration is kept outside the middleware logic, so the config
 
 mvn clean test
 
-mvn clean test
+mvn spring-boot:run
 
 ## Test the API manually
 
